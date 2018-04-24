@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <script src="script.js"></script>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Test</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        * {
+            font-family: Arial;
+        }
+        .container {
+            width: 50%;
+            height: 50%;
+            position: absolute;
+            top: 10%;
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+        .panel {
+            margin-bottom: 5px;
+        }
+        .panel-heading {
+            background-color: #bd2dbb;
+            border-bottom: 2px solid black;
+            padding: 20px;
+            color: white;
+            font-size: 26px;
+            font-style: italic;
+            font-weight: bold;
+        }
+        .active {
+            background-color: #7524bc;
+        }
+
+        .content {
+            background-color: white;
+            padding: 20px;
+            border: 1px solid lightgrey;
+            margin-bottom: 5px;
+            opacity: 0.7;
+        }
+
+        .symbol {
+            float: right;
+        }
+
+        .open {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+
+
+
+<body onload="init()">
+    <div class="container">
+        <div id="0" class="panel">
+            <div id="0" class="panel-heading">
+            <span class="symbol">&#x25BC;</span>
+            </div>
+            <div class="content" style="display:none;"></div>
+        </div>
+        <div id="1" class="panel">
+            <div  class="panel-heading">
+                <span class="symbol">&#x25BC;</span>
+            </div>
+            <div class="content" style="display:none;"></div>
+        </div>
+
+        <div id="2" class="panel">
+            <div class="panel-heading">
+                <span class="symbol">&#x25BC;</span>
+            </div>
+            <div class="content" style="display:none;"></div>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
